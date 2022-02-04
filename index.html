@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">    
+    <link rel="stylesheet" href="style.css" type="text/css">    
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+
+    <link rel="stylesheet" href="static/css/fontawesome.min.css" type="text/css"/>
+    
+
+    <title>OpenLayers Undo/Redo - Zoom to previous or next extent</title>
+  </head>
+  <body>    
+    <div class = "container">
+        <div class = "toolbar">
+            <span id = "btn1" title = "Draw Polygon" class="fas fa-draw-polygon" style="color:rgb(163, 127, 127);  background-color: white;" geomtype = "Polygon"></span>
+            
+            <span id = "btn2" title = "Zoom to Prevoius Extent" class = "fas fa-undo" style="color:rgb(163, 127, 127); background-color: white;"></span>
+
+            <span id = "btn3" title = "Zoom to Next Extent" class = "fas fa-redo" style="color:rgb(163, 127, 127); background-color: white;"></span>           
+                      
+        </div>
+        <div id="map" class="map">      
+          <div id = "popup"></div>  
+        </div>        
+    </div>    
+    <script src="script.js"></script>
+  </body>
+</html>
